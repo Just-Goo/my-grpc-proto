@@ -15,7 +15,6 @@ enum TransactionType {
 
 message Transaction {
   string account_number = 1 [ json_name = "account_number" ];
-  string account_number = 1 [ json_name = "account_number" ];
   TransactionType type = 2;
   double amount = 3;
   google.type.DateTime timestamp = 4;
@@ -27,5 +26,5 @@ message TransactionSummary {
   double sum_amount_in = 2 [ json_name = "sum_amount_in" ];
   double sum_amount_out = 3 [ json_name = "sum_amount_out" ];
   double sum_total = 4 [ json_name = "sum_total" ];
-  google.type.Date transaction_date = 5 [json_name = "transaction_date"];
+  google.type.Date transaction_date = 5 [ json_name = "transaction_date" ];
 }
